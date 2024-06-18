@@ -234,7 +234,7 @@ with open("Discharge_1.dat", 'w') as mohid_dat_final:
     for ij_indexes in zip(original_line_i, original_line_j, parallel_line_i, parallel_line_j):
         mohid_dat_final.write("<begindischarge>\n")
         mohid_dat_final.write("NAME                    : " + f'{ij_indexes[2]}_{ij_indexes[3]}\n')
-        mohid_dat_final.write("DESCRIPTION             : Descarga Climatológica\n")
+        mohid_dat_final.write("DESCRIPTION             : Lateral discharge\n")
         mohid_dat_final.write("DEFAULT_FLOW_VALUE      : 0\n")
         mohid_dat_final.write("I_CELL                  : " + f'{ij_indexes[2]}\n')
         mohid_dat_final.write("J_CELL                  : " + f'{ij_indexes[3]}\n')
